@@ -12,7 +12,6 @@ import Wrapper from '@/components/layout/Wrapper'
 import Header from '@/components/layout/Header'
 import ProductPrice from '@/components/layout/Product/ProductPrice'
 import CartButton from '@/components/layout/Product/CartButton'
-import FavoriteButton from '@/components/layout/Product/FavoriteButton'
 
 import { Card, CardContent } from '@/components/default/Card'
 import {
@@ -107,6 +106,7 @@ const ProductView: FC<ProductProps> = ({ id }) => {
 							{product.params.map((param, index) => (
 								<div key={index} className='w-full'>
 									{Object.entries(param).map(
+										// eslint-disable-next-line @typescript-eslint/no-unused-vars
 										([key, value], idx) => (
 											<div
 												key={idx}
