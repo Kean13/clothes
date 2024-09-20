@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+
+	overscroll-behavior: none;
+	scrollbar-width: none;
+	user-select: none;
+
+	-ms-overflow-style: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+	display: none;
+}
+
+div::-webkit-scrollbar {
+	display: none;
+}
+
+div {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+@layer base {
+	:root {
+		--red: rgb(239 68 68);
+		--radius: 0.5rem;
+	}
+
+	body {
+		@apply bg-background text-foreground;
+	}
+}
